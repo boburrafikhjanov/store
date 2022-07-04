@@ -1,0 +1,60 @@
+.container {
+    max-width: 578px;
+    margin: 56px auto;
+
+    .wrapMy {
+        display: flex;
+        gap: 30px;
+
+        .verf {
+            margin-top: 10px;
+            min-width: 355px;
+            height: 53px;
+            border: 2px solid rgba(199, 199, 199, 0.6);
+            outline: none;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 33px;
+            color: #797979;
+            padding-left: 10px;
+        }
+    }
+
+    .wrapCheck {
+        padding: 30px 0;
+    }
+
+    .wrapEmail {
+        padding: 30px 0;
+
+        .verf {
+            margin-top: 10px;
+            min-width: 740px;
+            height: 53px;
+            border: 2px solid rgba(199, 199, 199, 0.6);
+            outline: none;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 33px;
+            color: #797979;
+            padding-left: 10px;
+        }
+    }
+
+    .btnWrap {
+        .btn {
+            min-width: 306px;
+            height: 53px;
+            background: #E30909;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 18px;
+            color: #FFFFFF;
+        }
+    }
+}

@@ -1,0 +1,197 @@
+.footerBckgr {
+    background-color: #000;
+
+    .footerItems {
+        display: grid;
+        //grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 100px;
+        flex-wrap: wrap;
+        padding: 72px 0 113px 0;
+
+        @media (max-width: 1799px) {
+            padding: 72px 0 80px 0;
+            gap: 80px;
+        }
+
+        @media (max-width: 1300px) {
+            padding: 72px 0 80px 0;
+        }
+
+        @media (max-width: 1100px) {
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .aboutPart {
+            .logoBrand {
+                svg {
+                    @media (max-width: 1300px) {
+                        width: 200px;
+                    }
+                }
+            }
+
+            .aboutItems {
+                display: flex;
+                gap: 8px;
+                padding-top: 43px;
+
+                @media (max-width: 1300px) {
+                    padding-top: 20px;
+                }
+
+                .boldNumber {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #ffffff;
+
+                    @media (max-width: 1300px) {
+                        font-size: 18px;
+                    }
+                }
+
+                .nonBold {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #ffffff;
+
+                    @media (max-width: 1300px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .workTime {
+                padding: 8px 0 37px 0;
+
+                @media (max-width: 1300px) {
+                    padding: 5px 0 30px 0;
+                }
+
+                span {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #b7b3b3;
+
+                    @media (max-width: 1300px) {
+                        font-size: 12px;
+                    }
+                }
+
+                p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #ffffff;
+
+                    @media (max-width: 1300px) {
+                        font-size: 14px;
+                        line-height: 15px;
+                    }
+                }
+            }
+
+            .mailBrandstore {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+
+                @media (max-width: 1300px) {
+                    font-size: 18px;
+                    line-height: 10px;
+                }
+            }
+
+            .adressBrandstore {
+                padding-top: 37px;
+                max-width: 238px;
+
+                @media (max-width: 1300px) {
+                    width: 200px;
+                }
+
+                span {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #ffffff;
+
+                    @media (max-width: 1300px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .socialLogo {
+                display: flex;
+                gap: 30px;
+                padding-top: 57px;
+
+                @media (max-width: 1300px) {
+                    gap: 20px;
+                }
+            }
+        }
+
+        .categoryFooter {
+            h3 {
+                padding-bottom: 20px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                color: #ffffff;
+
+                @media (max-width: 1300px) {
+                    font-size: 18px;
+                    padding-bottom: 15px;
+                }
+            }
+
+            p {
+                padding: 13px 0;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #b7b3b3;
+
+                @media (max-width: 1300px) {
+                    font-size: 14px;
+                    padding: 8px 0;
+                }
+            }
+        }
+    }
+
+    .deviceLogo {
+        display: flex;
+        align-items: center;
+        width: 150px;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: end;
+        flex-direction: column;
+
+        @media (max-width: 1300px) {
+            gap: 8px;
+        }
+
+        img {
+            width: 150px !important;
+        }
+    }
+}

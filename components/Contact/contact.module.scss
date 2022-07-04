@@ -1,0 +1,268 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 50px 0;
+}
+
+.AddressContainer {
+    flex: 1;
+    max-width: 700px;
+    background: #FBFBFB;
+    padding: 90px 15px;
+}
+
+.AddressWrapper {
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.Error{
+    color:#971622 ;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.FormContainer {
+    flex: 1;
+    max-width: 700px;
+    flex-direction: column;
+    display: flex;
+    padding-left: 70px;
+    padding-right: 15px;
+    justify-content: center;
+}
+
+.Title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 200%;
+    /* identical to box height, or 36px */
+
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.Paragraph {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    color: #1C1C1C;
+    margin-bottom: 30px;
+    margin-top: 0;
+
+}
+
+.Phone {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    /* or 32px */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #000000;
+
+}
+
+.PhoneBig {
+    font-size: 25px;
+}
+
+.Input {
+    max-width: 530px;
+    border: 0;
+    border-bottom: 2px solid #111111;
+    outline: none;
+    padding: 15px 25px;
+
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    /* identical to box height, or 32px */
+
+    letter-spacing: 0.05em;
+
+    color: #111111;
+    margin-bottom: 20px;
+}
+.name{
+    color: black;
+}
+.error{
+    color: red;
+}
+.InputError{
+    outline: none;
+    max-width: 530px;
+    border: 0;
+    padding: 15px 25px;
+
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    /* identical to box height, or 32px */
+
+    letter-spacing: 0.05em;
+
+    color: #111111;
+    margin-bottom: 20px;
+    border-bottom: 2px solid#971622;
+}
+.Input::placeholder {
+    color: #111111;
+}
+
+.Textarea {
+    max-width: 530px;
+    height: 140px;
+    padding: 15px 25px;
+    border: 0;
+    border-bottom: 2px solid #111111;
+    outline: none;
+    resize: none;
+
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    /* identical to box height, or 32px */
+
+    letter-spacing: 0.05em;
+
+    color: #111111;
+}
+
+.Textarea::placeholder {
+    color: #111111;
+}
+
+.Button {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+outline: none;
+    color: #111111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 230px;
+    background: #FFFFFF;
+    border: 2px solid #111111;
+    box-sizing: border-box;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.Button:hover {
+    background-color: #E30909;
+    color: white;
+    border: 2px solid #E30909;
+    outline: none;
+
+}
+
+.SuccessTitle {
+   font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #E30909;
+    margin-top: 0;
+    margin-bottom: 75px;
+}
+
+
+@media (max-width: 768px) {
+    .Container {
+        flex-direction: column-reverse;
+    }
+
+    .AddressContainer {
+        padding: 40px 15px;
+    }
+
+    .AddressWrapper {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0;
+    }
+
+    .FormContainer {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.router{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .non{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: .05em;
+        -webkit-text-decoration-line: underline;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #b3b3b7;
+        cursor: pointer;
+        @media (max-width:600px) {
+            font-size: 16px;
+            line-height: 25px;
+          }
+          @media (max-width:450px) {
+            font-size: 14px;
+            line-height: 20px;
+            
+          }
+    }
+    .no{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+        color: #e30909;
+        @media (max-width:600px) {
+            font-size: 16px;
+            line-height: 25px;
+          }
+          @media (max-width:450px) {
+            font-size: 14px;
+            line-height: 20px;
+            
+          }
+    }
+}

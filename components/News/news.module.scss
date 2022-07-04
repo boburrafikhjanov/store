@@ -1,0 +1,109 @@
+.route {
+  margin: 100px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .iconInner {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+        @media (max-width: 600px) {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+      span {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #e30909;
+        @media (max-width: 600px) {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    button {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      color: #000000;
+      min-width: 240px;
+      width: 100%;
+      height: 60px;
+      background: unset;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 1px;
+      @media (max-width: 600px) {
+        font-size: 14px;
+        line-height: 18px;
+        min-width: 140px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+.wrapCart {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(424px,1fr));
+  gap: 30px;
+  margin-bottom: 100px;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    }
+  .cartItem {
+    img{
+        width: 424px;
+        @media (max-width: 600px) {
+        width: 300px;
+        }
+    }
+    p {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: #000000;
+      margin: 34px 0 10px 0;
+      @media (max-width: 500px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    button {
+      background: unset;
+      border: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 36px;
+      color: #e30909;
+      @media (max-width: 500px) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    svg path {
+      fill: #e30909;
+    }
+  }
+}

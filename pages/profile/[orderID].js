@@ -1,0 +1,91 @@
+import React, { useEffect } from "react";
+import Head from 'next/head'
+
+import MoreOrders from "../../components/Profile/Orders/MoreOrders/index";
+import { useTypeSelector } from "../../store/hooks/useSelector";
+import { useTypeDispatch } from "../../store/hooks/useDispatch";
+import { useRouter } from "next/router";
+import Tracker from '../../components/Tracker/index'
+
+import { getAsString } from "../../helpers/arrayOperations";
+
+const UserOrderPage = () => {
+  const { query } = useRouter();
+  const { order, ordersMeta } = useTypeSelector((state) => state.profile);
+  const { getUserOrder, clearUserOrder } = useTypeDispatch();
+  
+  useEffect(() => {
+    clearUserOrder();
+    if (
+      query.auth &&
+      getAsString(query.auth) === "false" &&
+      query.orderID &&
+      query.code
+    ) {
+      getUserOrder(+getAsString(query.orderID), getAsString(query.code));
+    } else if (query.orderID && !query.auth)
+      getUserOrder(+getAsString(query.orderID));
+  }, [query]);
+
+  return (
+    <>  
+     <Head>
+        <title>
+          Интернет-магазин компьютерной техники в Ташкенте | BRANDSTORE.UZ
+        </title>
+        <meta
+          name="description"
+          content={
+            "Купить в Ташкенте по доступной цене и бесплатной доставкой? Легко на brandstore.uz!"
+          }
+        />
+        <meta name="keywords" content={"Онлайн-магазин, Техника, Ташкент"} />
+        <meta name="author" content="brandstore" />
+
+        <meta
+          property="og:title"
+          content={"Интернет-магазин техники в Ташкенте | brandstore.uz"}
+        />
+        <meta
+          property="og:description"
+          content={
+            "Купить в Ташкенте по доступной цене и бесплатной доставкой? Легко на brandstore.uz!"
+          }
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/Favicon/android-icon-192x192.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/Favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/Favicon/favicon-96x96.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/Favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/Favicon/manifest.json" />
+        <meta property="og:url" content={"https://brandstore.uz"} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:site_name" content="brandstore.uz" />
+        <meta property="og:locale" content={"ru_RU"} />
+      </Head>
+      <Tracker/>
+      <MoreOrders orders={order} />
+    </>
+  );
+};
+
+export default UserOrderPage;

@@ -1,0 +1,20 @@
+.background {
+    background-color: #EDEDED;
+    height: 40px;
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .swithcer {
+             
+
+            p {
+                cursor: pointer;
+            }
+        }
+    }
+}

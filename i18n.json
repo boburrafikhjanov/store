@@ -1,0 +1,13 @@
+{
+    "locales": ["ru", "uz"],
+    "defaultLocale": "ru",
+    "pages": {
+      "*": ["common"],
+      "/": ["common", "home"],
+      "/profile": ["common"],
+      "/productPage/[product]": ["common"],
+      "/404": ["common", "common"],
+      "/map": ["common"]
+    }
+  }
+  

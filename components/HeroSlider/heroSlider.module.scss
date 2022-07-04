@@ -1,0 +1,55 @@
+.wrapSlider {
+  display: grid;
+  grid-template-columns: minmax(66%, 1fr) minmax(32%, 1fr);
+  gap: 35px;
+
+  @media(max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+
+  .sliderContainer {
+    .sliderImage {
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .hotNews {
+    img {
+      width: 100%;
+    }
+
+    @media(max-width: 1200px) {
+      display: none;
+
+    }
+  }
+}
+
+
+.modalOpen {
+
+  padding-top: 80px;
+
+  .title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .any {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .vertical {
+    width: 2px;
+
+  }
+}

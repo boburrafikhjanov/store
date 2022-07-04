@@ -1,0 +1,189 @@
+.wrapTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 95px 0 55px 0;
+
+  @media (max-width: 767px) {
+    padding: 45px 0 35px 0;
+  }
+
+  .fireBtn {
+    cursor: pointer;
+
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .logoPart {
+
+      width: 73px;
+      height: 81px;
+      background-image: url("../../public/Icon/brilian.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media(max-width: 767px) {
+        width: 60px;
+        height: 67px;
+      }
+
+      @media(max-width: 600px) {
+        width: 41px;
+        height: 46px;
+      }
+    }
+
+    .titleLogo {
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+
+        @media(max-width: 1000px) {
+          font-size: 25px;
+          line-height: 30px;
+        }
+
+        @media(max-width: 768px) {
+          font-size: 18px;
+          line-height: 30px;
+        }
+
+        @media(max-width: 768px) {
+          font-size: 16px;
+          line-height: 30px;
+        }
+
+        @media(max-width: 525px) {
+          font-size: 14px;
+        }
+      }
+
+      p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #e30909;
+
+        @media(max-width: 1000px) {
+          font-size: 25px;
+          line-height: 30px;
+        }
+
+        @media(max-width: 768px) {
+          font-size: 18px;
+          line-height: 30px;
+        }
+
+        @media(max-width: 768px) {
+          font-size: 16px;
+          line-height: 30px;
+        }
+
+        @media(max-width: 525px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    min-width: 248px;
+    height: 64px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    @media(max-width: 1000px) {
+      min-width: 220px;
+      height: 64px;
+      font-size: 16px;
+    }
+
+    @media(max-width: 600px) {
+      min-width: 180px;
+      height: 44px;
+      font-size: 14px;
+    }
+
+    @media(max-width: 484px) {
+      min-width: 150px;
+      height: 40px;
+      font-size: 12px;
+    }
+  }
+
+
+}
+
+.wrapBrands {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: initial;
+
+    .brandsLogo {
+      margin: auto;
+      max-width: 150px;
+      width: 150px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+.desktopBrand {
+  @media (max-width: 767px) {
+   justify-content: center;
+   display: none;
+  }
+
+
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 288px);
+  flex-wrap: wrap;
+
+  @media (max-width: 1400px) {
+    grid-template-columns: repeat(auto-fill, 350px);
+  }
+
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(auto-fill, 310px);
+  }
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(auto-fill, 280px);
+  }
+
+  // gap: 7px;
+  .brandsLogoDesktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    height: 270px;
+    border: 5px solid #fbfbfb;
+    transition: .3s;
+   
+    @media (max-width: 1400px) {
+      height: 200px;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.innerContainer {
+    max-width: 578px;
+    margin: 56px auto;
+    display: flex;
+    justify-content: space-between;
+
+    .fizLicho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    
+
+        button {
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+
+            p {
+                margin-top: 20px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 33px;
+                text-decoration-line: underline;
+                color: #474747;
+                @media (max-width: 500px) {
+                    margin-top: 0px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+}
+
+.wrapRegistration {
+    margin: 40px 0 120px 0;
+
+    .signUpInput {
+        max-width: 578px;
+        margin: auto;
+
+        .numberLabel {
+            display: flex;
+            gap: 10px;
+
+            .numberStep {
+                span {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 33px;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+            //#E30909
+
+            .inputRecieve {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .style {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 33px;
+                        color: #BABABA;
+                        @media (max-width:600px) {
+                            font-size: 12px;
+                            line-height: 15px;
+                       
+                                
+                        }
+                    }
+
+                    // input{
+                    //     min-width: 350px;
+                    //     height: 53px;
+                    //     opacity: 0.5;
+                    //     border: 2px solid #DDDDDD;
+                    //     outline: none;
+                    // }
+                }
+
+                button {
+                    margin-top: 33px;
+                    min-width: 240px;
+                    height: 53px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    border: none;
+                    background: #E30909;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .signSms {
+        max-width: 578px;
+        margin: auto;
+
+        .numberLabel {
+            display: flex;
+            gap: 10px;
+
+            .numberStep {
+                span {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 33px;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+
+            .inputRecieve {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .style {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 33px;
+                        color: #BABABA;
+                    }
+
+                    input {
+                        min-width: 350px;
+                        height: 53px;
+                        opacity: 0.5;
+                        border: 2px solid #DDDDDD;
+                        outline: none;
+                    }
+                }
+
+                button {
+                    margin-top: 33px;
+                    min-width: 240px;
+                    height: 53px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    border: none;
+                    background: #949494;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

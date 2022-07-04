@@ -1,0 +1,71 @@
+.similarContainer {
+  .carousel {
+    padding-bottom: 210px;
+
+    .similarItem {
+      height: 500px;
+    }
+
+    .wrapContainer {
+
+      .cartSales {
+        height: 559px;
+        border: 1px solid #bebebe;
+
+        .innerContainer {
+          padding: 45px;
+
+          img {
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+          }
+
+          .categoryTitle {
+            font-family: Montserrat;
+            padding-top: 24px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #2f2f2f;
+          }
+
+          .descriptionProduct {
+            font-family: Montserrat;
+            font-style: normal;
+            padding: 10px 0 36px 0;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-decoration-line: underline;
+            color: #000322;
+          }
+
+          .installmentPlan {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #878787;
+          }
+
+          .fixPrice {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 22px;
+            color: #000000;
+          }
+
+          .buyPart {
+            display: flex;
+            gap: 27px;
+          }
+        }
+      }
+    }
+  }
+}

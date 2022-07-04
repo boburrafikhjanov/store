@@ -1,0 +1,160 @@
+.main aside {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .moreAndClear {
+
+    .buttom {
+      padding: 0 50px 0 50px;
+      height: 70px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #fff;
+      border-top: 1px solid #ededed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media (max-width: 450px) {
+        padding: 0 15px 0 15px;
+      }
+
+      .clearBtn {
+        outline: none;
+        border: none;
+        background: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #000;
+
+        @media (max-width: 505px) {
+          font-size: 14px;
+        }
+      }
+
+      .moreBtn {
+        min-width: 200px;
+        height: 35px;
+        background-color: transparent;
+        border: 2px solid #E30909;
+        color: #E30909;
+        border-radius: 1px;
+        outline: none;
+        background-color: transparent;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+
+        @media (max-width: 505px) {
+          min-width: 150px;
+          height: 30px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .wrapFilter {
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+
+    .filterContainer {
+      box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+      padding: 20px 50px;
+
+      .wrapHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          font-size: 21px;
+        }
+
+        .exitIcon {
+          .exitIconone {
+            border: none !important;
+            background: transparent !important;
+            outline: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  .containerSlide {
+    padding: 110px 50px;
+
+    @media (max-width: 576px) {
+      padding: 110px 10px 85px 10px;
+    }
+
+    .itemFilter {
+      table{
+        width: 100%;
+        tr{
+          .boldParent{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 46px;
+            color: #000000;
+          }
+          .redChild{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 46px;
+            color: #E30909;
+          }
+          .monthly{
+            select{
+              width: 120px;
+              height: 35px;
+              border: none;
+              background: #DFDFDF;
+              font-style: normal;
+              font-weight: 500;
+              outline: none;
+              font-size: 16px;
+              line-height: 46px;
+              color: #000000;
+            }
+
+          }
+          .butRass {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 17px;
+            color: #FFFFFF;
+            background: #E30909;
+            width: 175px;
+            border: none;
+            outline: none;
+          }
+          }
+        }
+      }
+    }
+  }

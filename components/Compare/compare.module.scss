@@ -1,0 +1,243 @@
+.tabs {
+  .itemPart {
+    border-bottom: 1px solid #c4c4c4;
+    padding: 0 0 60px 0;
+    margin-bottom: 54px;
+
+    .headerTitle {
+      display: flex;
+      flex-direction: column;
+      gap: 110px;
+      padding-top: 90px;
+
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 35px;
+        color: #000000;
+      }
+    }
+
+    .clearbtn {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      min-width: 233px;
+      height: 62px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      background: transparent;
+      color: #000000;
+      margin-top: 20px;
+    }
+
+    .wrapProduct {
+      display: flex;
+      gap: 100px;
+      @media (max-width:700px) {
+        overflow: scroll;
+        gap: 50px;
+        padding: 0 0 20px 0;
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
+      }
+
+      .productPart {
+        .innerContainer {
+          max-width: 273px;
+
+          .removeList {
+            border: none;
+            background-color: unset;
+            font-size: 28px;
+            color: #e30909;
+            cursor: pointer;
+          }
+
+          .productName {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 39px;
+            text-decoration-line: underline;
+            color: #e30909;
+            height: 116px !important;
+            @media (max-width: 600px) {
+              font-size: 14px;
+              line-height: 25px;
+              height: 35px !important;
+            }
+          }
+
+          .padding {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 39px;
+            color: #000000;
+            padding: 41px 0 23px 0;
+            @media (max-width:600px) {
+              padding: 15px 0;
+              font-size: 14px;
+              line-height: 25px;
+            }
+          }
+
+          .btnsOrder {
+            display: grid;
+            grid-template-columns: 1fr 53px;
+            gap: 10px;
+
+            .red {
+              button {
+                cursor: pointer;
+                height: 52px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 18px;
+                color: #ffffff;
+                background: #e30909;
+                border: none;
+                width: 100%;
+              }
+            }
+
+            .favorite {
+              border: none;
+              cursor: pointer;
+
+              button {
+                border: none;
+                width: 52px;
+                height: 52px;
+              }
+            }
+          }
+        }
+
+        .imae{
+          img{
+            width: 273px !important;
+            height: 273px !important;
+          }
+        }
+      }
+    }
+
+    .vertical{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid red;
+      height: 600px;
+    }
+  }
+
+
+
+  .wrapFeature {
+    display: flex;
+
+    .wrapSide {
+      display: flex;
+      flex-direction: column;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 35px;
+      color: #000000;
+    }
+
+    .wrapColumn {
+      display: flex;
+
+      .featureChild {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+.routeLink { 
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 30px 0;
+  @media (max-width:600px) {
+    gap: 10px;
+    gap: 10px;
+    font-size: 10px;
+    margin: 10px 0 20px 0;
+  }
+
+  .nonactiveTitle {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #b3b3b7;
+    @media (max-width:600px) {
+      font-size: 14px;
+      line-height: 25px;
+    }
+    @media (max-width:450px) {
+      font-size: 10px;
+      line-height: 20px;
+      
+    }
+
+  }
+
+  .activeTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #e30909;
+    @media (max-width:600px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+    @media (max-width:450px) {
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+  }
+
+  .btnDas{
+    
+    @media (max-width: 1800px) {
+      display: flex;
+    }
+    @media (max-width:600px) {
+      display: none !important;
+    }
+  }
+
+  .ioc{
+
+    display: none;
+    @media (max-width:600px) {
+      display: block !important;  
+    }
+    
+  }
+  .iocon{
+    @media (max-width:600px) {
+      display: none !important;  
+    }
+  }
+
+
+}

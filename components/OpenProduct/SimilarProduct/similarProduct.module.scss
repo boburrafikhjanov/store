@@ -1,0 +1,103 @@
+.cartsPartS {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 0 50px 0;
+  @media (max-width: 550px) {
+    display: flex;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+  .wrapContainer {
+    position: relative;
+
+    border: 1px solid #9a9a9a;
+    padding: 20px;
+
+    margin-right: -1px;
+    .feature {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      button {
+        border: none;
+        background: none !important;
+      }
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 240px;
+      height: 280px;
+      object-fit: contain;
+    }
+    .opisaniy {
+      .router {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2f2f2f;
+      }
+      .title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #000322;
+        margin: 12px 0 12px 0;
+      }
+    }
+
+    .wrapBtn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .first {
+        .isntal {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 16px;
+          color: #878787;
+        }
+        .fixPRice {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 18px;
+          color: #000000;
+        }
+      }
+      .btn {
+        button {
+          background: #e30909;
+          color: #fff;
+          width: 140px;
+          height: 40px;
+          border: none;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+.nameE{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 30px;
+}

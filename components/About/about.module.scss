@@ -1,0 +1,250 @@
+.routeCart {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 30px 0;
+
+  @media (max-width: 500px) {
+    margin: 10px 0 30px 0;
+    gap: 10px;
+  }
+
+  .nonActiveRouteBox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    @media (max-width: 500px) {
+      gap: 10px;
+    }
+
+    .nonActiveRoute {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 35px;
+      letter-spacing: 0.05em;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #b3b3b7;
+
+      @media (max-width: 500px) {
+        font-size: 10px;
+      }
+    }
+
+    .show {
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+
+    .hide {
+      display: none;
+
+      @media (max-width: 500px) {
+        display: block;
+        font-size: 14px;
+        color: #b3b3b7;
+      }
+    }
+  }
+
+  .activeRoute {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #e30909;
+
+    @media (max-width: 500px) {
+      font-size: 10px;
+    }
+  }
+}
+
+.wrapBig {
+  display: grid;
+  grid-template-columns: 1fr 668px;
+  gap: 90px;
+  @media (max-width: 1500px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .secondPart {
+    img {
+      width: 100%;
+    }
+    .padding {
+      border: 3px solid #e30909;
+      margin-top: 50px;
+      padding: 65px;
+      @media (max-width: 900px) {
+        margin-top: 50px;
+        padding: 35px;
+      }
+      h3 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+        @media (max-width: 450px) {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+      p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+        @media (max-width: 450px) {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .img {
+    .titleRegular {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000000;
+      @media (max-width: 450px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .descr {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    @media (max-width: 450px) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  .stra {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    padding-top: 50px;
+    @media (max-width: 450px) {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  .wrapIcon {
+    display: flex;
+    gap: 80px;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
+    .nonClas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 31px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #000000;
+      @media (max-width: 450px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+.bottomPart {
+  margin-bottom: 150px;
+  @media (max-width:450px) {
+    margin-bottom: 50px;
+}
+  h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2bb34b;
+    margin: 80px 0 40px 0;
+    @media (max-width:450px) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+  }
+  .wrpaBottom {
+    display: flex;
+    gap: 35px;
+
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+
+    .bottomPadding {
+      border: 3px solid #2bb34b;
+      padding: 69px 43px 40px 43px;
+      @media (max-width:450px) {
+        padding: 20px;
+    }
+      .nomiYoq {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: 70px;
+        @media (max-width:450px) {
+            font-size: 20px;
+            line-height: 25px;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+      }
+    }
+  }
+}

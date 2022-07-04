@@ -1,0 +1,99 @@
+.containerAuth {
+    max-width: 578px;
+    margin: 56px auto 127px auto;
+
+    .wrapInput {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            height: 55px;
+            margin-top: 15px;
+            border: 2px solid rgba(199, 199, 199, 0.6);
+            outline: none;
+            font-family: Montserrat;
+            padding-left: 15px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 33px;
+            color: #000000;
+            opacity: 0.8;
+
+            &::placeholder {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 33px;
+                color: #797979;
+                opacity: 0.8;
+            }
+        }
+
+        .submitBtn {
+            margin-top: 50px;
+
+            .signIn {
+                min-width: 177px;
+                height: 53px;
+                border: none;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 18px;
+                color: #ffffff;
+                background-color: #e30909;
+                margin-right: 30px;
+                outline: none;
+                cursor: pointer;
+            }
+
+            .forgot {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 18px;
+                text-decoration-line: underline;
+                color: #474747;
+                border: none;
+                background: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            @media (max-width: 500px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                .signIn {
+                    max-width: 177px !important;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .noAccount {
+            margin-top: 30px;
+
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 18px;
+                color: #474747;
+                cursor: pointer;
+
+                span {
+                    color: #E30909;
+
+                    @media (max-width: 500px) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+export const popularCategory = [
+    {
+        id: 0,
+        title: 'Телефоны и планшеты',
+        uzTitle: 'Telefonlar va planshetlar',
+        className: "iPad",
+        href: "/catalog/telefony-i-plansheti",
+    },
+    {
+        id: 1,
+        title: 'Товары для офиса',
+        uzTitle: 'Ofis uchun tovarlar',
+        className: "monoBlocks",
+        href: "/catalog/tekhnika-dlya-ofisa",
+    },
+    {
+        id: 2,
+        title: 'Оргтехника',
+        uzTitle: 'Tashkiliy texnika',
+        className: "officeEquipment",
+        href: "/catalog/orgtekhnika",
+    },
+    {
+        id: 3,
+        title: 'Aксессуары',
+        uzTitle: 'Aksessuarlar',
+        className: "accessories",
+        href: "catalog/sotovye-telefony-i-aksessuary",
+    },
+    {
+        id: 4,
+        title: 'Для геймеров',
+        uzTitle: 'Geymerlar uchun',
+        className: "forGamers",
+        href: "/catalog/dlya-geymerov",
+    },
+    {
+        id: 5,
+        title: 'Ноутбуки',
+        uzTitle: 'Noutbuklar',
+        className: "laptops",
+        href: "/catalog/noutbuki-2",
+    },
+    {
+        id: 6,
+        title: 'Компьютеры',
+        uzTitle: 'Kompyuterlar',
+        className: "computers",
+        href: "/catalog/kompyutery",
+    },
+    {
+        id: 7,
+        title: 'Техника для дома',
+        uzTitle: 'Uy uchun Texnikalar',
+        className: "cctv",
+        href: "/catalog/tekhnika-dlya-doma",
+    },
+    {
+        id: 8,
+        title: 'Компьютерные комплектующие',
+        uzTitle: 'Kompyuter qismlari',
+        className: "cctv",
+        href: "/catalog/komplektuyushchie",
+    },
+    {
+        id: 9,
+        title: 'Периферийные устройства',
+        uzTitle: 'Periferik qurilmalar',
+        className: "cctv",
+        href: "/catalog/periferiynye-ustroystva",
+    },
+  
+]

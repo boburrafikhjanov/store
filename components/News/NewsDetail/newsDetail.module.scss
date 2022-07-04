@@ -1,0 +1,202 @@
+.breadCrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 45px 0;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    margin: 20px 0 0 0;
+    align-items: flex-start;
+  }
+  .wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .strelka {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .main {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 35px;
+      letter-spacing: 0.05em;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: #b3b3b7;
+      @media (max-width: 1400px) {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+      @media (max-width: 1200px) {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+    }
+    .red {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 35px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      max-width: 1000px;
+      width: 100%;
+      color: #e30909;
+      @media (max-width: 1400px) {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+      @media (max-width: 1200px) {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 900px) {
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .wrapDate {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17.2869px;
+        line-height: 43px;
+        text-align: right;
+        color: #000000;
+        opacity: 0.5;
+      }
+      .icons {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        svg path {
+          fill: #000;
+        }
+      }
+    }
+
+    .non {
+      display: flex;
+      justify-content: space-between;
+      max-width: 300px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17.2869px;
+      color: #000000;
+    }
+  }
+}
+
+.startAny {
+  .redA {
+    display: none;
+
+    @media (max-width: 900px) {
+      display: block;
+      color: #e30909;
+      margin: 20px 0 0 0;
+      font-weight: 700;
+    }
+  }
+  .one {
+    margin: 80px 0 130px 0;
+    @media (max-width: 900px) {
+      margin: 50px 0 50px 0;
+    }
+    h2,
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 50px;
+      color: #000000;
+      @media (max-width: 1400px) {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+      @media (max-width: 1200px) {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+    }
+
+    h1{
+      @media (max-width: 1400px) {
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+    }
+    ul{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      margin: 10px 0;
+    }
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 21.6086px;
+      line-height: 40px;
+      color: #000000;
+      margin: 20px 0;
+      @media (max-width: 1400px) {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+      }
+    }
+    .first {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 21.6086px;
+      line-height: 40px;
+      color: #000000;
+      width: 1200px;
+    }
+
+    .dis {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 21.6086px;
+      line-height: 40px;
+      /* or 185% */
+
+      color: #000000;
+    }
+  }
+}

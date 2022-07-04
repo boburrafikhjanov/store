@@ -1,0 +1,146 @@
+.wrapMap {
+    display: flex;
+    gap: 100px;
+    margin: 50px 0;
+    @media (max-width:600px) {
+        display: unset;
+    }
+
+    .sidebar {
+        max-width: 322px;
+
+        .cart {
+
+            .workTime {
+                margin: 10px 0 23px 0;
+
+                .flex {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .width {
+                        padding-right: 54px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                        @media (max-width:600px) {
+                            font-size: 12px;
+                            text-align: right;
+                            justify-content: space-between;
+                        }
+                    }
+
+                    .nerobota {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                        @media (max-width:600px) {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .widthA {
+                        padding-right: 133px;
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                      
+                    }
+                }
+            }
+
+            .bold {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 17px;
+                color: #2BB34B;
+                padding: 0 5px 0 0;
+            }
+
+            .regular {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 17px;
+                color: #2BB34B;
+            }
+
+            small {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #9D9D9D;
+                padding: 10px 0;
+            }
+        }
+    }
+
+    .mapWrap {
+        .mapPart {
+            @media (max-width:600px) {
+                display: none;
+            }
+        }
+    }
+}
+
+.router {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    gap: 20px;
+
+    .main {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        text-decoration-line: underline;
+        text-transform: uppercase;
+        color: #B3B3B7;
+
+        @media (max-width:600px) {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        @media (max-width:450px) {
+            font-size: 14px;
+            line-height: 20px;
+
+        }
+    }
+
+    .ourmagazine {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #E30909;
+
+        @media (max-width:600px) {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        @media (max-width:450px) {
+            font-size: 14px;
+            line-height: 20px;
+
+        }
+    }
+}
